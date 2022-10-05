@@ -2,8 +2,8 @@ package de.neuefische;
 
 public class Main {
     public static void main(String[] args) {
-        Guitar ibanez = new Guitar();
+        Instrument guitar = new Instrument();
 
-        System.out.println(ibanez.play());
+        System.out.println(guitar.play());
     }
 }
