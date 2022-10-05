@@ -9,6 +9,7 @@ public class Instrument {
 
     public Instrument(String type) {
         this.type = type;
+        // Noch irgendeine besondere Logik..
     }
 
     public String getType() {
@@ -21,5 +22,12 @@ public class Instrument {
 
     public String play() {
         return "Lalalala";
+    }
+
+    @Override
+    public String toString() {
+        return "Instrument{" +
+                "type='" + type + '\'' +
+                '}';
     }
 }

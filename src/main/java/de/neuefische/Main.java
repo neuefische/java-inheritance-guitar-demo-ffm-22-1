@@ -2,9 +2,8 @@ package de.neuefische;
 
 public class Main {
     public static void main(String[] args) {
-        Instrument guitarInstrument = new Instrument();
-
-        Guitar myRealGuitar = new Guitar();
+        Instrument guitarInstrument = new Instrument("Gitarre");
+        Guitar myRealGuitar = new Guitar("Gitarre");
 
         System.out.println(
                 guitarInstrument.play()
@@ -18,7 +17,11 @@ public class Main {
         myRealGuitar.getType();
 
         myRealGuitar.getNumberOfStrings();
-//        Funktioniert nicht
-//        guitarInstrument.getNumberOfStrings();
+        // guitarInstrument.getNumberOfStrings(); <- Funktioniert nicht
+
+        System.out.println(guitarInstrument.toString());
+        System.out.println(myRealGuitar.toString());
+
+
     }
 }
