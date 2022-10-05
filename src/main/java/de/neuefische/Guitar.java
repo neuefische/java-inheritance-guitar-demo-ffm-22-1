@@ -15,6 +15,17 @@ public class Guitar extends Instrument {
 
     }
 
+    @Override
+    public String play() {
+        return "Todaaaaaay is gonna be day";
+    }
+
+    @Override
+    public void clean() {
+        System.out.println("Ölen");
+    }
+
+
     public Integer getNumberOfStrings() {
         return numberOfStrings;
     }

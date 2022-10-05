@@ -2,26 +2,20 @@ package de.neuefische;
 
 public class Main {
     public static void main(String[] args) {
-        Instrument guitarInstrument = new Instrument("Gitarre");
-        Guitar myRealGuitar = new Guitar("Gitarre");
 
-        System.out.println(
-                guitarInstrument.play()
-        );
+        Guitar myRealGuitar = new Guitar("Gitarre");
+        Piano piano = new Piano("Klavier");
+
+        piano.play();
 
         System.out.println(
                 myRealGuitar.play()
         );
+        System.out.println(
+                piano.play()
+        );
 
-        guitarInstrument.getType();
-        myRealGuitar.getType();
-
-        myRealGuitar.getNumberOfStrings();
-        // guitarInstrument.getNumberOfStrings(); <- Funktioniert nicht
-
-        System.out.println(guitarInstrument.toString());
-        System.out.println(myRealGuitar.toString());
-
-
+        myRealGuitar.clean();
+        piano.clean();
     }
 }

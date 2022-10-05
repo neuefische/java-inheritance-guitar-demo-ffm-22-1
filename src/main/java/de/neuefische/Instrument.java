@@ -1,7 +1,12 @@
 package de.neuefische;
 
 // Elternobjekt
-public class Instrument {
+
+// "Ich möchte ein Instrument kaufen"
+// "Ja welches denn?!"
+// -> Man kann kein "Instrument" im Laden kaufen
+//    -> Man kann aber Gitarren, Pianos, etc kaufen!
+public abstract class Instrument {
 
     private String type;
 
@@ -9,8 +14,13 @@ public class Instrument {
 
     public Instrument(String type) {
         this.type = type;
-        // Noch irgendeine besondere Logik..
     }
+
+    // Sagt WAS passieren soll
+    // (aber nicht wie)
+    public abstract String play();
+
+    public abstract void clean();
 
     public String getType() {
         return type;
@@ -18,10 +28,6 @@ public class Instrument {
 
     public void setType(String type) {
         this.type = type;
-    }
-
-    public String play() {
-        return "Lalalala";
     }
 
     @Override
