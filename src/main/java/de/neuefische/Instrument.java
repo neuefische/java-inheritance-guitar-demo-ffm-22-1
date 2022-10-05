@@ -1,12 +1,21 @@
 package de.neuefische;
 
+// Elternobjekt
 public class Instrument {
 
-    String type;
+    private String type;
 
     public Instrument() { }
 
     public Instrument(String type) {
+        this.type = type;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
         this.type = type;
     }
 
