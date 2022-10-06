@@ -6,7 +6,7 @@ package de.neuefische;
 // "Ja welches denn?!"
 // -> Man kann kein "Instrument" im Laden kaufen
 //    -> Man kann aber Gitarren, Pianos, etc kaufen!
-public abstract class Instrument {
+public abstract class Instrument implements Audible, NochEinInterface {
 
     private String type;
 

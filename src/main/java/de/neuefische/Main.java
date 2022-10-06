@@ -1,21 +1,29 @@
 package de.neuefische;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Vector;
+
 public class Main {
     public static void main(String[] args) {
 
-        Guitar myRealGuitar = new Guitar("Gitarre");
         Piano piano = new Piano("Klavier");
+        Guitar eGuitar = new EGuitar();
+        Drill drill = new Drill();
 
-        piano.play();
+        Instrument asd = new Guitar();
 
-        System.out.println(
-                myRealGuitar.play()
-        );
-        System.out.println(
-                piano.play()
-        );
+        List<Audible> instrumentenkiste = new ArrayList<>();
 
-        myRealGuitar.clean();
-        piano.clean();
+
+        instrumentenkiste.add(piano);
+        instrumentenkiste.add(eGuitar);
+
+
+        RecordStudio recordStudio = new RecordStudio();
+        recordStudio.record(piano);
+        recordStudio.record(eGuitar);
+        recordStudio.record(drill);
     }
 }

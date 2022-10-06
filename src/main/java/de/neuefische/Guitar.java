@@ -8,11 +8,12 @@ public class Guitar extends Instrument {
     private Integer numberOfStrings = 6;
     private String type;
 
+    public Guitar() {}
+
     public Guitar(String type) {
         // super() = Konstruktor der Elternklasse
         // Gitarre ist ein Instrument, deshalb müssen wir "erstmal" das Instrument bauen
         super(type);
-
     }
 
     @Override
